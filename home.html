@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo"><img src="icon.png" alt="me" height="35px"></div>
+        <div id="nav-buttons">
+            <button>Home</button>
+            <button>About</button>
+            <button>Projects</button>
+            <button>Blogs</button>
+        </div>
+        <div id="contact-button">
+            <button>Contact</button>
+        </div>
+    </div>
+    <div id="main">
+        <div class="img">
+            <div id="img"><img src="me.jpg" alt="Rishabh Kumar" class="profile-img" height="500px"></div>
+            <div id="lottie-container"></div>
+        </div>
+        <div class="hero">
+            <h1><span class="prompt">></span> Rishabh Kumar</h1>
+            <h2>Computer Science Engineer 👨‍💻</h2>
+            <p>// Passionate about building innovative solutions.</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-container'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'Hello.json' // the path to the animation json
+        });
+    </script>
+</body>
+
+</html>
